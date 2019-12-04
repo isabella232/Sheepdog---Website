@@ -1,0 +1,41 @@
+ * {
+  box-sizing: border-box; /* accounts for width after padding  */
+}
+  /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: orange;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px; /* adds border space for collapsible content */
+  background-color: blue;
+
+  /* hides content when collapsed */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; /* animation */
+}
+
+.event-column {
+    max-width:  900px; /* sets the maximum width for each event */
+    margin:   0 auto; /* centers event column */
+}
+
+.event {
+  list-style: none; /* remove bullet */
+}
+
