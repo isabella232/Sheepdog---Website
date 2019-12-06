@@ -109,11 +109,6 @@
     position: abs;
 }
 
-.collapsible:last-child {
-    min-height: 222px;
-    border-radius: ;
-}
-
 .event {
   list-style: none; /* remove bullet */
   padding-top: 10px;
