@@ -7,11 +7,8 @@ function init() {
 	    this.classList.toggle("active");
 	    var content = this.nextElementSibling;
 	    if (content.style.maxHeight){
-	    	console.log("a");
 	      content.style.maxHeight = null;
 	    } else {
-	    	    	console.log("b");
-
 	      content.style.maxHeight = content.scrollHeight + "px";
 	    }
 	  });
