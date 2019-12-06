@@ -1,7 +1,7 @@
  * {
   box-sizing: border-box; /* accounts for width after padding  */
 }
-
+/*size of body was being weird, had to add this to fix it*/
 html{
   width: 100%;
   height: 100%;
@@ -9,12 +9,12 @@ html{
 
 body{
   position: relative;
-  margin: 0; /*Gets rid of the margin up top preventing the header from reaching the top of the screen*/
+  margin: 0; /*Header was not reaching left, right and top of the screen, might be a better way to do this*/
   height: 100%;
 }
 /*
 Container for the header
-Makerelative to adjust contents inside header
+Make relative to adjust contents inside header
 */
 .header{
   z-index: 100;
@@ -22,7 +22,7 @@ Makerelative to adjust contents inside header
   position:relative;
   background-color: black;
 }
-/*Container for logo, need it to make logo */
+/*Container for logo, need it to make logo adjustable*/
 .header__logo-box{
   padding-top: .5%;
   padding-left:1.5%;
@@ -91,7 +91,7 @@ Makerelative to adjust contents inside header
   rgba(160, 245, 234, 0.637)),
    url(https://images.pexels.com/photos/1340504/pexels-photo-1340504.jpeg?cs=srgb&dl=man-standing-on-stage-1340504.jpg&fm=jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; /*Prevents background from repeating*/
 
 }
 
