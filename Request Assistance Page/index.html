@@ -7,12 +7,24 @@
         
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     </head>
     <body>
-        <header id="header">
-            HEADER
-        </header>
+        <header class="header">	
+			<div class="header__logo-box">	
+				<img src="https://static1.squarespace.com/static/5aabc9909d5abbaa5f9cff43/t/5c3ac3b10ebbe85c2b8987a5/1559053753673/?format=1500w" alt="Logo" class="header__logo"/>	
+			</div>
+			<div class="header__text-box">	
+				<h1 class="header__text">	
+					Sheep Dog Support	
+                </h1>
+				<div class ="button-container">	
+					<button class="nav-button button__home">Home</button>	
+					<button class="nav-button button__request-assistance">Request Assistance</button>	
+					<button class="nav-button button__take-action">Take Action</button>	
+				</div>	
+			</div>	
+		</header>
         
         <main id="main">
             <div class="form-wrapper">
@@ -75,8 +87,25 @@
             </div>
         </main>
         
-        <footer id="footer">
-            FOOTER
+        <footer class="footer">
+            <div class="social-media">
+                <div class="social-media-title">Stay Connected</div>
+
+                <div class="social-media-icons">
+                    <a href="#" class="logo"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="logo"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="logo"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="logo"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                
+                <div class="subscribe-form">
+                    <input type="text" class="sub-email" placeholder="E-mail Address" required>
+                    <input type="submit" class="subscribe" value="SUBSCRIBE">
+                </div>
+            </div>
+            <div class="lower-info">
+                @Copyright. All Rights Reserved
+            </div>
         </footer>
     </body>
 </html>
